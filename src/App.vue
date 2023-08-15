@@ -1,6 +1,6 @@
-<template>  
+<template>
   <!-- 使用 Router -->
-  <router-view />
+  <router-view/>
 </template>
 
 <script>

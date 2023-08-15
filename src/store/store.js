@@ -1,7 +1,7 @@
 //store.js:
-import { createStore } from "vuex";
+import {createStore} from "vuex";
 // 导入 element plus 组件
-import { ElMessage } from "element-plus";
+import {ElMessage} from "element-plus";
 
 const store = createStore({
     state() {

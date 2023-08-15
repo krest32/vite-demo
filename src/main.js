@@ -1,4 +1,4 @@
-import { createApp } from "vue";
+import {createApp} from "vue";
 import App from "./App.vue";
 
 // 导入router
@@ -17,8 +17,9 @@ import axios from "./utils/axios";
 const app = createApp(App);
 // store.use(ElementPlus);
 app.use(router).use(ElementPlus).use(store);
-
-axios.defaults.withCredentials = false; // 跨域设置，false忽略跨域cookies（Access-Control-Allow-Headers:*）
-axios.defaults.timeout = 10000; // 等待时间，ms
+// 跨域设置，false忽略跨域cookies（Access-Control-Allow-Headers:*）
+axios.defaults.withCredentials = false;
+// 等待时间，ms
+axios.defaults.timeout = 10000;
 
 app.mount("#app");
